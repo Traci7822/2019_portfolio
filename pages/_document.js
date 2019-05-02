@@ -20,11 +20,16 @@ export default class MyDocument extends Document {
   }
 
   render() {
+    let styles = {
+      backgroundColor: '#898e91',
+    }
+
     return (
       <html>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" />
         <Head>
         </Head>
-        <body>
+        <body style={styles}>
           <Main />
           <NextScript />
         </body>

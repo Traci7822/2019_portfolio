@@ -2,22 +2,20 @@ import styled from 'styled-components';
 import Header from '../components/header';
 
 export default () => (
-  <div>
-    <Header />
-    <div className="banner">
-      <div className="profile_text">
-        <h1>Traci Thompson</h1>
-        <h3>Full Stack Software Developer</h3>
-      </div>
+  <div className="index">
+    {/* <Header /> */}
+    <div className="profile_text">
+      <h3>Traci Thompson | Full Stack Developer</h3>
     </div>
+    <div className="banner"></div>
     <style jsx>{`
       .banner {
-        height: 90%;
+        height: 80%;
         width: 95%;
-        border: 1px solid black;
+        border: 15px solid white;
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         background: url("../static/traci-mountain.jpg");
@@ -31,6 +29,7 @@ export default () => (
         color: white;
         font-size: 3em; 
         line-height: .5;
+        font-family: 'Cinzel', serif;
       }
 
       h1 {
