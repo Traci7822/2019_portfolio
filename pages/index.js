@@ -1,20 +1,36 @@
 import styled from 'styled-components';
 import Header from '../components/header';
 import React from 'react';
+import Home from '../components/home';
+import News from '../components/news';
+import Contact from '../components/contact';
+import About from '../components/about';
 
 class Index extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      active: false,
+      active: 'Home',
     };
   }
 
-  toggleMenu = () => {
+  toggleMenu = () => {}
+  focus = (event) => {}
+
+  handleClick = (e, page) => {
     this.setState({
-      active: !this.state.active
+      active: e
     });
+  }
+
+  pageComponent = () => {
+    switch(this.state.active) {
+      case 'Home': return <Home />;
+      case 'News': return <News />;
+      case 'Contact': return <Contact />;
+      case 'About': return <About />;
+    }
   }
 
   render() {
@@ -23,33 +39,22 @@ class Index extends React.Component {
         <div className="index">
           <Header onClick={this.toggleMenu.bind(this)} toggleMenu={this.toggleMenu} active={this.state.active} />
           <div className={"topnav " + (this.state.active ? ' change' : null)} id="myTopnav">
-            <a href="#home" className="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="#home" onClick={this.handleClick.bind(this, 'Home')} data-id="Home">Home</a>
+            <a href="#news" onClick={this.handleClick.bind(this, 'News')}>News</a>
+            <a href="#contact" onClick={this.handleClick.bind(this, 'Contact')}>Contact</a>
+            <a href="#about" onClick={this.handleClick.bind(this, 'About')}>About</a>
           </div>
           <h3>Traci Thompson | Full Stack Developer</h3>
         </div>
-        <div className="banner"></div>
+        <div>
+          {this.pageComponent()}
+        </div>
         <style jsx>{`
           .index {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-          }
-          .banner {
-            height: 80%;
-            width: 95%;
-            border: 15px solid white;
-            margin: 0;
-            position: absolute;
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: url("../static/traci-mountain.jpg");
-            background-size: cover;
-            background-position: left;
           }
 
           h3 {
@@ -69,7 +74,7 @@ class Index extends React.Component {
 
           .topnav {
             opacity: 0;
-            width: 0;
+            width: 10%;
           }
 
           .topnav.change {

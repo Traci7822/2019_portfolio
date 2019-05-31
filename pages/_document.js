@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
 
   render() {
     let styles = {
-      backgroundColor: '#898e91',
+      backgroundColor: '#708090',
     }
 
     return (
