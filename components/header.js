@@ -8,9 +8,9 @@ class Header extends React.Component {
 render() {
   return(
     <div className="container" onClick={this.props.toggleMenu}>
-      <div className={"bar bar1 " + (this.props.active ? ' change' : null)}></div>
-      <div className={"bar bar2 " + (this.props.active ? ' change' : null)}></div>
-      <div className={"bar bar3 " + (this.props.active ? ' change' : null)}></div>
+      <div className={"bar bar1 " + (!this.props.hamburger ? ' change' : null)}></div>
+      <div className={"bar bar2 " + (!this.props.hamburger ? ' change' : null)}></div>
+      <div className={"bar bar3 " + (!this.props.hamburger ? ' change' : null)}></div>
 
       <style jsx>{`
         .container {

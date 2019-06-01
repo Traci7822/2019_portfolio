@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Header from '../components/header';
 import React from 'react';
 import Home from '../components/home';
+import NavLinks from '../components/navlinks';
 import Resume from '../components/resume';
 import Contact from '../components/contact';
 import About from '../components/about';
@@ -12,10 +13,16 @@ class Index extends React.Component {
     super(props);
     this.state = {
       active: 'Home',
+      hamburger: true,
     };
   }
 
-  toggleMenu = () => {}
+  toggleMenu = () => {
+    this.setState({
+      hamburger: !this.state.hamburger
+    });
+  }
+
   focus = (event) => {}
 
   handleClick = (e, page) => {
@@ -37,13 +44,8 @@ class Index extends React.Component {
     return (
       <div className="page">
         <div className="index">
-          <Header onClick={this.toggleMenu.bind(this)} toggleMenu={this.toggleMenu} active={this.state.active} />
-          <div className={"topnav " + (this.state.active ? ' change' : null)} id="myTopnav">
-            <a href="#home" onClick={this.handleClick.bind(this, 'Home')} data-id="Home">Home</a>
-            <a href="#resume" onClick={this.handleClick.bind(this, 'Resume')}>Resume</a>
-            <a href="#contact" onClick={this.handleClick.bind(this, 'Contact')}>Contact</a>
-            <a href="#about" onClick={this.handleClick.bind(this, 'About')}>About</a>
-          </div>
+          <Header onClick={this.toggleMenu.bind(this)} toggleMenu={this.toggleMenu} hamburger={this.state.hamburger} />
+          {this.state.hamburger ? <div style={{width : "10%"}}></div> : <NavLinks hamburger={this.state.hamburger} handleClick={this.handleClick}/>}
           <h3 id="name">Traci Thompson | Full Stack Developer</h3>
         </div>
         <div>
@@ -61,7 +63,7 @@ class Index extends React.Component {
           }
 
           h3 {
-            width: 100%;
+            width: 75%;
             text-align: center;
             color: white;
             font-size: 2.2em; 
@@ -73,25 +75,6 @@ class Index extends React.Component {
 
           h1 {
             line-height: 0;
-          }
-
-          .topnav {
-            opacity: 0;
-            width: 10%;
-          }
-
-          .topnav.change {
-            opacity: 100;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 10%;
-          }
-
-          a {
-            text-decoration: none;
-            color: white;
-            font-family: 'Cinzel', serif;
           }
         `}</style>
       </div>
