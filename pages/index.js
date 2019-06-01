@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Header from '../components/header';
 import React from 'react';
 import Home from '../components/home';
-import News from '../components/news';
+import Resume from '../components/resume';
 import Contact from '../components/contact';
 import About from '../components/about';
 
@@ -27,7 +27,7 @@ class Index extends React.Component {
   pageComponent = () => {
     switch(this.state.active) {
       case 'Home': return <Home />;
-      case 'News': return <News />;
+      case 'Resume': return <Resume />;
       case 'Contact': return <Contact />;
       case 'About': return <About />;
     }
@@ -40,16 +40,19 @@ class Index extends React.Component {
           <Header onClick={this.toggleMenu.bind(this)} toggleMenu={this.toggleMenu} active={this.state.active} />
           <div className={"topnav " + (this.state.active ? ' change' : null)} id="myTopnav">
             <a href="#home" onClick={this.handleClick.bind(this, 'Home')} data-id="Home">Home</a>
-            <a href="#news" onClick={this.handleClick.bind(this, 'News')}>News</a>
+            <a href="#resume" onClick={this.handleClick.bind(this, 'Resume')}>Resume</a>
             <a href="#contact" onClick={this.handleClick.bind(this, 'Contact')}>Contact</a>
             <a href="#about" onClick={this.handleClick.bind(this, 'About')}>About</a>
           </div>
-          <h3>Traci Thompson | Full Stack Developer</h3>
+          <h3 id="name">Traci Thompson | Full Stack Developer</h3>
         </div>
         <div>
           {this.pageComponent()}
         </div>
         <style jsx>{`
+          #name {
+            margin-right: 10%;
+          }
           .index {
             display: flex;
             flex-direction: row;
