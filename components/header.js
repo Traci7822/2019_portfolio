@@ -17,6 +17,7 @@ render() {
           display: inline-block;
           cursor: pointer;
           align-self: flex-start;
+          width: 10%;
         }
 
         .bar {
