@@ -12,8 +12,6 @@ render() {
       <a href="#resume" className={this.props.hamburger ? ' change' : null} onClick={this.props.handleClick.bind(this, "Resume")} >Resume</a>
       <br />
       <a href="#about" className={this.props.hamburger ? ' change' : null} onClick={this.props.handleClick.bind(this, "About")} >About Me</a>
-      <br />
-      <a href="#contact" className={this.props.hamburger ? ' change' : null} onClick={this.props.handleClick.bind(this, "Contact")}  >Contact</a>
       <style jsx>{`
         a {
           text-decoration: none;

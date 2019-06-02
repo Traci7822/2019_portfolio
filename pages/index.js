@@ -35,7 +35,6 @@ class Index extends React.Component {
     switch(this.state.active) {
       case 'Home': return <Home handleClick={this.handleClick}/>;
       case 'Resume': return <Resume handleClick={this.handleClick}/>;
-      case 'Contact': return <Contact handleClick={this.handleClick}/>;
       case 'About': return <About handleClick={this.handleClick}/>;
     }
   }
