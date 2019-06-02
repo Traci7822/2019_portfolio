@@ -52,6 +52,9 @@ class Index extends React.Component {
           {this.pageComponent()}
         </div>
         <style jsx>{`
+          body {
+            font-family: 'Cinzel', serif;
+          }
           .content {
             margin-top: 25px;
             text-align: center;
