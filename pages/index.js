@@ -25,7 +25,7 @@ class Index extends React.Component {
 
   focus = (event) => {}
 
-  handleClick = (e, page) => {
+  handleClick = (e) => {
     this.setState({
       active: e
     });
@@ -33,10 +33,10 @@ class Index extends React.Component {
 
   pageComponent = () => {
     switch(this.state.active) {
-      case 'Home': return <Home />;
-      case 'Resume': return <Resume />;
-      case 'Contact': return <Contact />;
-      case 'About': return <About />;
+      case 'Home': return <Home handleClick={this.handleClick}/>;
+      case 'Resume': return <Resume handleClick={this.handleClick}/>;
+      case 'Contact': return <Contact handleClick={this.handleClick}/>;
+      case 'About': return <About handleClick={this.handleClick}/>;
     }
   }
 
@@ -48,13 +48,10 @@ class Index extends React.Component {
           {this.state.hamburger ? <div style={{width : "10%"}}></div> : <NavLinks hamburger={this.state.hamburger} handleClick={this.handleClick}/>}
           <h3 id="name">Traci Thompson | Full Stack Developer</h3>
         </div>
-        <div>
+        <div className="content">
           {this.pageComponent()}
         </div>
         <style jsx>{`
-          .page {
-            height: 80%;
-          }
           #name {
             margin-right: 10%;
           }
@@ -73,7 +70,6 @@ class Index extends React.Component {
             line-height: .5;
             font-family: 'Cinzel', serif;
             margin-top: 50px;
-
           }
 
           h1 {

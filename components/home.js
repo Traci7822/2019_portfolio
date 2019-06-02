@@ -12,8 +12,8 @@ render() {
           text-align: center;
         }
         img {
-          width: 85%;
-          border: 15px solid white;
+          width: 75%;
+          border: 20px solid white;
         }
       `}</style>
     </div>
