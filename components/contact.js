@@ -5,7 +5,7 @@ class Contact extends React.Component {
 
 render() {
   return(
-    <div>
+    <div className="contact">
       <a href="mailto:Traci@Thompson.Codes" targer="_href">Traci@Thompson.Codes</a>
       <style jsx>{`
         a {
@@ -13,6 +13,9 @@ render() {
           color: white;
           font-family: 'Cinzel', serif;
           font-size: 3em;
+        }
+        .contact {
+          margin-top: 125px;
         }
       `}</style>
       </div>
