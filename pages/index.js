@@ -52,6 +52,9 @@ class Index extends React.Component {
           {this.pageComponent()}
         </div>
         <style jsx>{`
+          .content {
+            margin-top: 25px;
+          }
           #name {
             margin-right: 10%;
           }
