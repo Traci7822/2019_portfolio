@@ -43,9 +43,9 @@ class Index extends React.Component {
     return (
       <div className="page">
         <div className="index">
-          <Header onClick={this.toggleMenu.bind(this)} toggleMenu={this.toggleMenu} hamburger={this.state.hamburger} />
-          {this.state.hamburger ? <div style={{width : "10%"}}></div> : <NavLinks hamburger={this.state.hamburger} handleClick={this.handleClick}/>}
+          {/* <Header onClick={this.toggleMenu.bind(this)} toggleMenu={this.toggleMenu} hamburger={this.state.hamburger} /> */}
           <h3 id="name">Traci Thompson | Full Stack Developer</h3>
+          <NavLinks handleClick={this.handleClick}/>
         </div>
         <div className="content">
           {this.pageComponent()}
@@ -62,12 +62,12 @@ class Index extends React.Component {
             flex-direction: column;
             min-height: 500px;
           }
-          #name {
-            margin-right: 10%;
-          }
+          // #name {
+          //   margin-right: 10%;
+          // }
           .index {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
           }

@@ -2,19 +2,8 @@ import ContactLinks from './contactlinks';
 class About extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      show: false,
-    };
   }
 
-toggleLinks = () => {
-  this.setState({
-    show: !this.state.show,
-  });
-}
-showLinks = () => {
-  return <ContactLinks />
-}
 render() {
   return(
     <div className="about">
@@ -24,9 +13,25 @@ render() {
 
       <p>As a Full Stack Developer I can provide custom services depending upon your needs. Please contact me using
         any of the methods below if you would like to discuss a potential project.</p>
-      <a href="#contact_links"><img src="../static/arrows.png" onClick={this.toggleLinks} /></a>
+      <img src="../static/arrows.png" />
+      <br />
       <div id="contact_links">
-        {this.state.show ? this.showLinks() : null}
+        <ContactLinks />
+      </div>
+      <div>
+        <img src="../static/arrows.png" />
+      </div>
+      <div>
+        <h3>Media & Publications</h3>
+        <a href="https://www.thewomenofdenver.com/articles/becoming-a-software-developer-traci-thompson" target="_blank">Women Of Denver: Becoming a Software Developer</a>
+        <br />
+        <a href="https://medium.com/@TraciThompson/bubble-sort-the-gateway-algorithm-52f015fb37a7" target="_blank">Bubble Sort: The gateway algorithm</a>
+        <br />
+        <a href="https://medium.com/@TraciThompson/http-request-to-rails-db-angular-views-b742f3eca71b" target="_blank">HTTP request to Rails DB & Angular Views</a>
+        <br />
+        <a href="https://medium.com/@TraciThompson/continuously-looping-non-sequential-arrays-on-click-with-jquery-and-ruby-on-rails-3a80d5e9abae" target="_blank">Looping non-sequential arrays with jQuery & Ruby on Rails</a>
+        <br />
+        <a href="https://medium.com/@TraciThompson/why-i-decided-to-learn-software-development-d8dadaa3360a" target="_blank">Why I decided to learn software development</a>
       </div>
       <style jsx>{`
         .about {
