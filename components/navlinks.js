@@ -18,10 +18,6 @@ render() {
           font-size: 1.3em;
           margin: 15px;
         }
-
-        // .navlinks {
-        //   width: 10%;
-        // }
       `}</style>
     </div>
   )};
