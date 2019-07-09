@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _contactlinks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./contactlinks */ "./components/contactlinks.js");
+/* harmony import */ var _contactlinks__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./contactlinks */ "./components/contactlinks.js");
 
 
 
@@ -187,7 +187,7 @@ function (_React$Component) {
           lineNumber: 18
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_contactlinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_contactlinks__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
@@ -407,7 +407,6 @@ var _jsxFileName = "/home/traci/projects/personal/2019_portfolio/components/cont
 
 
 
-// import github from '../static/github.png'
 var ContactLinks =
 /*#__PURE__*/
 function (_React$Component) {
@@ -426,7 +425,7 @@ function (_React$Component) {
         className: "jsx-4158932565" + " " + "contact_links",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 10
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
@@ -434,7 +433,7 @@ function (_React$Component) {
         className: "jsx-4158932565",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 11
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
@@ -442,7 +441,7 @@ function (_React$Component) {
         className: "jsx-4158932565",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 11
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
@@ -451,7 +450,7 @@ function (_React$Component) {
         className: "jsx-4158932565",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 12
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
@@ -459,7 +458,7 @@ function (_React$Component) {
         className: "jsx-4158932565",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 12
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
@@ -468,7 +467,7 @@ function (_React$Component) {
         className: "jsx-4158932565",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 13
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
@@ -476,13 +475,13 @@ function (_React$Component) {
         className: "jsx-4158932565",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 13
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
         id: "4158932565",
         __self: this
-      }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3RyYWNpL3Byb2plY3RzL3BlcnNvbmFsLzIwMTlfcG9ydGZvbGlvL2NvbXBvbmVudHMvY29udGFjdGxpbmtzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWVrQiIsImZpbGUiOiIvaG9tZS90cmFjaS9wcm9qZWN0cy9wZXJzb25hbC8yMDE5X3BvcnRmb2xpby9jb21wb25lbnRzL2NvbnRhY3RsaW5rcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIGltcG9ydCBnaXRodWIgZnJvbSAnLi4vc3RhdGljL2dpdGh1Yi5wbmcnXG5cbmNsYXNzIENvbnRhY3RMaW5rcyBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XG4gICAgc3VwZXIocHJvcHMpO1xuICB9XG5cblxucmVuZGVyKCkge1xuICByZXR1cm4oXG4gICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWN0X2xpbmtzXCI+XG4gICAgICA8YSBocmVmPVwibWFpbHRvOnRyYWNpQHRob21wc29uLmNvZGVzXCI+PGltZyBzcmM9XCIuLi9zdGF0aWMvZW1haWwucG5nXCIvPjwvYT5cbiAgICAgIDxhIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20vVHJhY2k3ODIyXCIgdGFyZ2V0PVwiX2JsYW5rXCI+PGltZyBzcmM9XCIuLi9zdGF0aWMvZ2l0aHViLnBuZ1wiIC8+PC9hPlxuICAgICAgPGEgaHJlZj1cImh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi90cmFjaWh0aG9tcHNvbi9cIiB0YXJnZXQ9XCJfYmxhbmtcIj48aW1nIHNyYz1cIi4uL3N0YXRpYy9saW5rZWRpbi5wbmdcIi8+PC9hPlxuXG4gICAgICA8c3R5bGUganN4PntgXG5cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKX07XG59XG5leHBvcnQgZGVmYXVsdCBDb250YWN0TGlua3MiXX0= */\n/*@ sourceURL=/home/traci/projects/personal/2019_portfolio/components/contactlinks.js */"));
+      }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3RyYWNpL3Byb2plY3RzL3BlcnNvbmFsLzIwMTlfcG9ydGZvbGlvL2NvbXBvbmVudHMvY29udGFjdGxpbmtzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWNrQiIsImZpbGUiOiIvaG9tZS90cmFjaS9wcm9qZWN0cy9wZXJzb25hbC8yMDE5X3BvcnRmb2xpby9jb21wb25lbnRzL2NvbnRhY3RsaW5rcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuY2xhc3MgQ29udGFjdExpbmtzIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgY29uc3RydWN0b3IocHJvcHMpIHtcbiAgICBzdXBlcihwcm9wcyk7XG4gIH1cblxuXG5yZW5kZXIoKSB7XG4gIHJldHVybihcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhY3RfbGlua3NcIj5cbiAgICAgIDxhIGhyZWY9XCJtYWlsdG86dHJhY2lAdGhvbXBzb24uY29kZXNcIj48aW1nIHNyYz1cIi4uL3N0YXRpYy9lbWFpbC5wbmdcIi8+PC9hPlxuICAgICAgPGEgaHJlZj1cImh0dHBzOi8vZ2l0aHViLmNvbS9UcmFjaTc4MjJcIiB0YXJnZXQ9XCJfYmxhbmtcIj48aW1nIHNyYz1cIi4uL3N0YXRpYy9naXRodWIucG5nXCIgLz48L2E+XG4gICAgICA8YSBocmVmPVwiaHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3RyYWNpaHRob21wc29uL1wiIHRhcmdldD1cIl9ibGFua1wiPjxpbWcgc3JjPVwiLi4vc3RhdGljL2xpbmtlZGluLnBuZ1wiLz48L2E+XG5cbiAgICAgIDxzdHlsZSBqc3g+e2BcblxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApfTtcbn1cbmV4cG9ydCBkZWZhdWx0IENvbnRhY3RMaW5rcyJdfQ== */\n/*@ sourceURL=/home/traci/projects/personal/2019_portfolio/components/contactlinks.js */"));
     }
   }]);
 
