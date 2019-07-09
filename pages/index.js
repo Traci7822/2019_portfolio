@@ -43,8 +43,7 @@ class Index extends React.Component {
     return (
       <div className="page">
         <div className="index">
-          {/* <Header onClick={this.toggleMenu.bind(this)} toggleMenu={this.toggleMenu} hamburger={this.state.hamburger} /> */}
-          <h3 id="name">Traci Thompson | Full Stack Developer</h3>
+          <h3 id="name">Traci Thompson <span id="divide">| </span>Full Stack Developer</h3>
           <NavLinks handleClick={this.handleClick}/>
         </div>
         <div className="content">
@@ -62,9 +61,7 @@ class Index extends React.Component {
             flex-direction: column;
             min-height: 500px;
           }
-          // #name {
-          //   margin-right: 10%;
-          // }
+
           .index {
             display: flex;
             flex-direction: column;
@@ -84,6 +81,22 @@ class Index extends React.Component {
 
           h1 {
             line-height: 0;
+          }
+
+          @media screen and (max-width: 981px) {
+            #name {
+              line-height: 1em;
+              width: 40%;
+            }
+            #divide {
+              display: none;
+            }
+          }
+
+          @media screen and (max-width: 545px) {
+            #name {
+              width: 70%;
+            }
           }
         `}</style>
       </div>
